@@ -1,0 +1,122 @@
+/* Responsive Breakpoints */
+:root {
+    --breakpoint-mobile: 576px;
+    --breakpoint-tablet: 768px;
+    --breakpoint-desktop: 992px;
+  }
+  
+  /* ajuste de responsividade global */
+  @media screen and (max-width: 992px) {
+    body {
+      font-size: 14px;
+    }
+  
+    h1, h2, h3 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* responsividade do cabeçalho */
+    header {
+      min-height: 600px;
+    }
+  
+    .header-content {
+      padding: 40px 15px;
+    }
+  
+    .header-content img {
+      width: 100%;
+    }
+  
+    /* responsividade das seções */
+    section {
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+  
+    #section-inverted-world .section-texts,
+    #section-stranger-things-trailer .section-texts {
+      width: 100%;
+      text-align: center;
+    }
+  
+    #section-stranger-things-trailer .section-texts h2 {
+      width: 100%;
+    }
+  
+    /* responsividade da galeria */
+    #section-stranger-things-gallery .gallery-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding-left: 0;
+    }
+  
+    #section-stranger-things-gallery .gallery-image {
+      width: 200px;
+      height: 200px;
+    }
+  
+    /* responsividade do formulário */
+    #section-form h2 {
+      width: 100%;
+    }
+  
+    #section-form .form-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    #section-form .form-content h3,
+    #section-form .form-container {
+      flex-basis: auto;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    body {
+      font-size: 12px;
+    }
+  
+    h1, h2, h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  
+    .header-content p {
+      margin: 20px 0 30px;
+    }
+  
+    /* responsividade da seção do trailer */
+    #section-stranger-things-trailer .video-frame iframe {
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+  
+    /* responsividade do rodapé */
+    footer::before,
+    footer::after {
+      width: 200px;
+      height: 150px;
+    }
+  }
+  
+  /* ajustes para dispositivo mobile */
+  @media (hover: hover) {
+    button:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  /* melhora de responsividade */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      transition: none !important;
+    }
+  }
